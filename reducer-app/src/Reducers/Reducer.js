@@ -1,16 +1,16 @@
 export const initialState = {
   toDo: [
     {
-      item: "Feed the neighbor's dogs",
+      item: "",
       completed: false,
-      id: 3892987589
+      id: date.now
     }
   ]
 }
 
-export const Reducer = (state, action) => {
+export const reducer = (state, action) => {
   switch (action.type) {
-    default:
+      case: "New Chore"
       return state
   }
 }
