@@ -1,11 +1,11 @@
 import React, { useReducer, useState } from "react"
-import { initialState, reducer } from "./Reducers/Reducer"
+import { initialState, reducer } from "./reducers"
 import FormList from "./components/FormList"
 import Form from "./components/Form"
 
 function App() {
   const [newListItem, setListItem] = useState("")
-  const [state, dispatch] = useReducer(itemReducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const handleChange = event => {
     event.preventDefault()
